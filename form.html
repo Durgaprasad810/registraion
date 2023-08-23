@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="header"><h1>Registration Form</h1></div>
+    <form action="endpage.html">
+    <div class="personal_info">
+        <div class="first-name">First Name : <br><input type="text" required></div>
+        <div class="middle-name">Middle Name : <br><input type="text" required></div>
+        <div class="last-name">Last Name : <br><input type="text" required></div>
+        <div class="age">Age : <br><input type="number" min="10" max="100" required></div>
+        <div class="email">Email : <br><input type="email" required></div>
+        <div class="gender">
+            Gender : 
+            <div  class="radio">
+                <input type="radio" name="Male" value="Male"> 
+                <div>Male</div>
+            </div>
+            <div  class="radio">
+                <input type="radio" name="Male" value="Male"> 
+                <div>Female</div>
+            </div>
+        </div>
+        <div class="phone-number">Phone-number : <br><input type="text" name="ph-number" id="ph-number"></div>
+        <div class="address">Address : <br><input type="text" required></div>
+        <div class="intrest_text" >Your intrest..<br>
+            <select class="intrest" id="referrer" name="referrer">
+              <option value="">select one</option>
+              <option value="1">Playing</option>
+              <option value="2">Singing</option>
+              <option value="3">Dancing</option>
+              <option value="4">Reading</option>
+            </select></div>
+        <div class="about">About You:
+            <br><textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding ..."></textarea>
+        <!-- <a class='link' href="endpage.html" target="_blank">Submit</a> -->
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>
